@@ -1,0 +1,35 @@
+[project]
+name = "fidelis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate==0.22.0",
+    "datasets>=5.0.1",
+    "deepspeed>=0.19.7",
+    "google>=3.0.0",
+    "litellm>=1.101.0",
+    "networkx==3.1",
+    "openai>=2.54.0",
+    "peft==0.5.0",
+    "protobuf>=7.36.2",
+    "pyarrow>=25.0.1",
+    "pybind11>=3.1.0",
+    "python-dotenv>=1.2.3",
+    "scikit-learn>=1.9.1",
+    "sentencepiece>=0.2.2",
+    "tiktoken>=0.14.0",
+    "tqdm>=4.70.1",
+    "transformers>=5.17.0",
+    "trl==0.7.1",
+    "walker>=0.0.2",
+    "wandb>=0.30.0",
+]
+
+[project.scripts]
+fidelis = "fidelis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
